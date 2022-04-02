@@ -7,13 +7,13 @@
     --font-semi: 600;
 }
 
-/*===== Colores =====*/
+/*===== Color =====*/
 :root{
     --first-color: #4070F4;
     --second-color: #0E2431;
 }
 
-/*===== Fuente y tipografia =====*/
+/*===== typo =====*/
 :root{
     --body-font: 'Poppins', sans-serif;
 
@@ -22,13 +22,13 @@
     --normal-font-size: 0.938rem;
 
     @media screen and (min-width: 768px){
-        --big-font-size: 3.5rem;
+        --big-font-size: 4rem;
         --h2-font-size: 2rem;
         --normal-font-size: 1rem;
     }
 }
 
-/*===== Margenes =====*/
+/*===== Margin =====*/
 :root{
     --mb-1: 0.5rem;
     --mb-2: 1rem;

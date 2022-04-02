@@ -6,13 +6,13 @@
   --font-semi: 600;
 }
 
-/*===== Colores =====*/
+/*===== Color =====*/
 :root{
   --first-color: #4070F4;
   --second-color: #0E2431;
 }
 
-/*===== Fuente y tipografia =====*/
+/*===== typo =====*/
 :root{
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
@@ -27,7 +27,7 @@
   }
 }
 
-/*===== Margenes =====*/
+/*===== Margin =====*/
 :root{
   --mb-1: 0.5rem;
   --mb-2: 1rem;
@@ -216,7 +216,7 @@ img{
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 295px;
+  width: 60%;
 }
 
 /*BUTTONS*/
@@ -363,6 +363,15 @@ img{
 }
 
 /* ===== MEDIA QUERIES=====*/
+/* @media screen and(max-width:768px){
+  .home__img{
+    width: 320px;
+    bottom: 35%;
+    right: 10;
+  }
+} */
+
+
 @media screen and (min-width: 768px){
   body{
     margin: 0;
@@ -395,6 +404,7 @@ img{
   }
   .nav__link{
     color: var(--second-color);
+    
   }
 
   .home{
@@ -414,8 +424,8 @@ img{
     margin-right: var(--mb-4);
   }
   .home__img{
-    width: 457px;
-    bottom: 15%;
+    width: 320px;
+    bottom: 35%;
   }
 
   .about__container, .skills__container{
