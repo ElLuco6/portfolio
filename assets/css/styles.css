@@ -710,6 +710,6 @@ img{
   #about .about__container{ grid-template-columns: 1fr; row-gap: 1rem; }
   #about .about__img img{ width: min(75vw, 320px); }
 }
-#home{
-  margin-top: 60px;
+.home{
+  margin-top: 60px !important;
 }
