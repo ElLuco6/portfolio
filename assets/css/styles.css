@@ -58,6 +58,10 @@ body{
   font-size: var(--normal-font-size);
   color: var(--second-color);
 }
+
+main{
+  background-color: #f6f8fb;
+}
 h1,h2,p{
   margin: 0;
 }
@@ -457,4 +461,255 @@ img{
   .home__img{
     right: 10%;
   }
+}
+
+/* Full width + 1 bloc par ligne */
+#work .bd-grid {
+  max-width: none;          /* on retire le 1024px */
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 var(--mb-2);   /* petite marge latérale */
+  display: grid;
+  grid-template-columns: 1fr; /* 1 carte par ligne */
+  row-gap: 1.25rem;
+}
+
+/* Cartes plus clean */
+#work .skills__data {
+  background: #fff;
+  border-radius: .75rem;
+  padding: 1rem;
+  box-shadow: 0 6px 24px rgba(14,36,49,.08);
+  border-left: 4px solid var(--first-color);
+}
+
+/* Header compact : titre à gauche + icônes techno à droite */
+#work .work__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  margin-bottom: .5rem;
+}
+
+/* Ce sélecteur évite de casser ton style global */
+#work .work__header .skills__name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Rangée d’icônes techno (Boxicons) */
+#work .work__tech {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  opacity: .95;
+}
+#work .work__tech .bx {
+  font-size: 1.15rem;
+  color: var(--first-color);
+}
+
+/* Liste plus lisible */
+#work .skills__data ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin: .25rem 0 .75rem;
+}
+#work .skills__data li + li { margin-top: .35rem; }
+
+/* Badges stack (remplace le paragraphe "Stack : ...") */
+#work .work__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+#work .badge {
+  display: inline-block;
+  padding: .25rem .5rem;
+  font-size: .8rem;
+  border-radius: .4rem;
+  background: rgba(64,112,244,.1);
+  color: var(--first-color);
+  border: 1px solid rgba(64,112,244,.18);
+  line-height: 1;
+}
+#work{
+  display: flex;
+  flex-direction: column;
+  padding:2rem
+}
+
+
+/* Full width + 1 bloc par ligne pour Work */
+#work .bd-grid{
+  max-width: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 var(--mb-2);
+  display: grid;
+  grid-template-columns: 1fr; /* une carte par ligne */
+  row-gap: 1rem;
+}
+
+/* Carte Work en 2 colonnes internes: gauche (titre+icônes), droite (contenu) */
+#work .skills__data.work-row{
+  display: grid;                /* override de .skills__data (flex) */
+  grid-template-columns: minmax(220px, 28%) 1fr;
+  gap: 1rem 1.5rem;
+  align-items: start;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid var(--first-color);
+  box-shadow: 0 6px 24px rgba(14,36,49,.08);
+}
+@media (max-width: 767px){
+  #work .skills__data.work-row{
+    grid-template-columns: 1fr; /* pile sur mobile */
+  }
+}
+
+/* Colonne gauche : titre + barre d'icônes en dessous */
+#work .work__left{ display:flex; flex-direction:column; gap:.45rem; }
+#work .work__left .skills__name{ margin:0; font-size:1.05rem; font-weight:600; }
+
+/* Icônes techno (Boxicons) */
+#work .work__tech{ display:flex; flex-wrap:wrap; gap:.4rem; }
+#work .work__tech .bx{ font-size:1.15rem; color:var(--first-color); }
+
+/* Colonne droite : contenu + badges */
+#work .work__right ul{
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin: 0 0 .6rem 0;
+}
+#work .work__right li+li{ margin-top:.35rem; }
+
+#work .work__badges{ display:flex; flex-wrap:wrap; gap:.4rem; }
+#work .badge{
+  display:inline-block;
+  padding:.25rem .5rem;
+  font-size:.8rem;
+  border-radius:.4rem;
+  background:rgba(64,112,244,.1);
+  color:var(--first-color);
+  border:1px solid rgba(64,112,244,.18);
+  line-height:1;
+}
+
+
+/* ====== HOME (hero) : carte propre + 2 colonnes ====== */
+#home.bd-grid{
+  /* carte */
+  max-width: 1280px; width: 100%; margin: 0 auto; padding: 1.25rem;
+  background: #fff;
+  border: 1px solid rgba(64,112,244,.14);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(14,36,49,.06);
+  position: relative;
+
+  /* grille */
+  height: auto;                  /* override du height plein écran */
+  row-gap: 0.75rem; column-gap: 2rem;
+  display: grid;
+  grid-template-columns: minmax(300px, 1.15fr) minmax(260px, .85fr);
+}
+
+/* liseré gauche */
+#home.bd-grid::before{
+  content:"";
+  position:absolute; left:-1px; top:0; bottom:0; width:4px;
+  background: linear-gradient(180deg, #6da4ff, #4070F4);
+  border-radius: 4px 0 0 4px;
+}
+
+/* placer les éléments (gauche = data + socials, droite = image) */
+#home .home__data{ grid-column: 1; align-self: center; }
+#home .home__social{ grid-column: 1; align-self: start; margin-top: .25rem; }
+#home .home__img{ grid-column: 2; justify-self: end; }
+
+/* supprimer l’absolu et recadrer la photo */
+#home .home__img{ position: static; width: auto; }
+#home .home__img img{
+  width: clamp(260px, 32vw, 380px);
+  aspect-ratio: 3/4;
+  object-fit: cover; object-position: center top;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(14,36,49,.12);
+}
+
+/* Titre + CTA + socials */
+#home .home__title{ line-height: 1.05; letter-spacing: -.02em; margin-bottom: 1rem; }
+#home .nav__link{ /* transforme le lien Contact en vrai bouton (sans impacter le menu) */
+  display: inline-block; background: var(--first-color); color: #fff;
+  padding: .65rem 1.15rem; border-radius: .6rem; font-weight: 600;
+  border: 1px solid rgba(64,112,244,.18);
+}
+#home .nav__link:hover{ box-shadow: 0 8px 22px rgba(64,112,244,.22); }
+
+/* icônes sociales en pills */
+#home .home__social{
+  display: flex; gap: .5rem; margin-top: .85rem;
+}
+#home .home__social-icon{
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px;
+  background: rgba(64,112,244,.08);
+  border: 1px solid rgba(64,112,244,.18);
+  border-radius: 10px;
+  color: var(--first-color);
+  font-size: 1.15rem;
+}
+#home .home__social-icon:hover{ transform: translateY(-1px); }
+
+@media (max-width: 767px){
+  #home.bd-grid{ grid-template-columns: 1fr; }
+  #home .home__img{ justify-self: center; }
+  #home .home__img img{ width: min(70vw, 360px); }
+}
+
+/* ====== ABOUT : carte propre + 2 colonnes équilibrées ====== */
+#about{
+  background: rgba(64,112,244,.035);
+  border-radius: 12px;
+  padding-top: 2.25rem; padding-bottom: 2rem;
+}
+#about .bd-grid{
+  max-width: 1280px; width:100%; margin:0 auto; padding:0 1rem;
+}
+#about .about__container{
+  background:#fff;
+  border:1px solid rgba(64,112,244,.14);
+  border-radius:12px;
+  box-shadow: 0 6px 20px rgba(14,36,49,.06);
+  padding: 1.25rem;
+  position: relative;
+  display: grid; grid-template-columns: 1fr 1.2fr; column-gap: 1.5rem; align-items: center;
+}
+#about .about__container::before{
+  content:""; position:absolute; left:-1px; top:0; bottom:0; width:4px;
+  background: linear-gradient(180deg, #6da4ff, #4070F4); border-radius:4px 0 0 4px;
+}
+
+/* photo about cadrée */
+#about .about__img{ justify-self: center; }
+#about .about__img img{
+  width: clamp(220px, 28vw, 320px); max-width: 100%;
+  aspect-ratio: 4/5; object-fit: cover; object-position: center;
+  border-radius: 12px; box-shadow: 0 4px 14px rgba(14,36,49,.12);
+}
+
+/* texte about */
+#about .about__subtitle{ margin-bottom: .5rem; font-weight: 600; }
+#about .about__text{ line-height: 1.55; opacity: .95; }
+
+/* mobile: pile propre */
+@media (max-width: 767px){
+  #about .about__container{ grid-template-columns: 1fr; row-gap: 1rem; }
+  #about .about__img img{ width: min(75vw, 320px); }
+}
+#home{
+  margin-top: 60px;
 }
