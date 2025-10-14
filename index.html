@@ -2,412 +2,494 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- =====BOX ICONS===== -->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <!-- =====BOX ICONS===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Portfolio Saint-supéry Lucas</title>
+  <title>Portfolio Saint-supéry Lucas</title>
 </head>
 
 <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="index.html" class="nav__logo">Lucas</a>
-            </div>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Accueil</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Compétences</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Expériences</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
-    </header>
-
-    <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">Salut,<br>je suis <span class="home__title-color">Lucas</span><br>Dév.
-                    web </h1>
-
-                <a href="#contact" class="nav__link">Contact</a>
-            </div>
-             <div class="home__img">
-                <img src="assets/img/IMG-0253.jpg" alt=" ma photo" >
-              
-            </div> 
-            <div class="home__social">
-                <a href="https://www.linkedin.com/in/lucas-saint-sup%C3%A9ry-195767205/" class="home__social-icon"><i
-                        class='bx bxl-linkedin'></i></a>
-
-                <a href="https://github.com/ElLuco6" class="home__social-icon"><i class='bx bxl-github'></i></a>
-            </div>
-
-            
-        </section>
-
-        <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-            <h2 class="section-title">À propos</h2>
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/work2.jpg" alt="ma photo mdr" >
-                </div>
-
-                <div>
-                    <h2 class="about__subtitle">Alors pour faire simple</h2>
-                    <p class="about__text">Je suis développeur web full-stack, fraîchement diplômé d’un Master en développement logiciel, je me lance en freelance pour transformer vos idées en applications concrètes.
- </p>
-                </div>
-            </div>
-        </section>
-
-        <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Compétences</h2>
-
-            <div class="skills__container bd-grid">
-                <div>
-                    <h2 class="skills__subtitle">Front-end</h2>
-                    <p class="skills__text">Moderne, maintenable et orienté performance</p>
-
-                     <div class="skills__data">
-      <div class="skills__names">
-    <i class='bx bx-code-curly skills__icon'></i>
-        <span class="skills__name">TypeScript</span>
-      </div>
-    </div>
-
-    <div class="skills__data">
-      <div class="skills__names">
-        <i class='bx bxl-angular skills__icon'></i>
-        <span class="skills__name">Angular • RxJS • Angular Material</span>
-      </div>
-    </div>
-
-    <div class="skills__data">
-      <div class="skills__names">
-        <i class='bx bxl-react skills__icon'></i>
-        <span class="skills__name">React</span>
-      </div>
-    </div>
-
-    <div class="skills__data">
-      <div class="skills__names">
-        <i class='bx bxl-css3 skills__icon'></i>
-        <span class="skills__name">SCSS • Tailwind CSS</span>
-      </div>
-    </div>                   
-                   
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-wordpress skills__icon'></i>
-                            <span class="skills__name">Wordpress</span>
-                        </div>
-
-                    </div>
-                    
-                </div>
-
-                <div>
-                    <img src="assets/img/work3.jpg" alt="Image de travail" class="skills__img">
-                </div>
-            </div>
-            <div class="skills__container bd-grid">
-  <div>
-    <h2 class="skills__subtitle">Back-end</h2>
-    <p class="skills__text">Développement de back-end fiables et évolutifs, du prototype à la mise en production.</p>
-
-    <div class="skills__data">
-      <div class="skills__names">
-        <i class='bx bxl-nodejs skills__icon'></i>
-        <span class="skills__name">Node.js • NestJS • Express</span>
-      </div>
-    </div>
-
-    <div class="skills__data">
-  <div class="skills__names">
-    <i class='bx bxs-data skills__icon'></i>
-    <span class="skills__name">PostgreSQL</span>
-  </div>
-</div>
-
-<div class="skills__data">
-  <div class="skills__names">
-    <i class='bx bx-leaf skills__icon'></i>
-    <span class="skills__name">MongoDB</span>
-  </div>
-</div>
-
-    <!-- Optionnel : auth & API, si tu veux préciser le type de back -->
-    <div class="skills__data">
-      <div class="skills__names">
-    <i class='bx bx-lock-alt skills__icon'></i>
-        <span class="skills__name">REST APIs • Auth JWT</span>
-      </div>
-    </div>
-
-    <!-- Expériences / héritage -->
-    <div class="skills__data">
-      <div class="skills__names">
-        <i class='bx bxl-php skills__icon'></i>
-        <span class="skills__name">PHP • Symfony</span>
-      </div>
-    </div>
-
-    <div class="skills__data">
-      <div class="skills__names">
-        <i class='bx bxs-data skills__icon'></i>
-        <span class="skills__name">MySQL</span>
-      </div>
-    </div>
-    
-  </div>
-  <div>
-    <img src="assets/img/work5.jpg" alt="image de travail" class="skills__img">
-  </div>
-</div>
-  
-</div>
-
-
-  
-
-
-
-            </div>
-
-             <div class="skills__container bd-grid">
-            <div>
-  <h2 class="skills__subtitle">Infra & Audit</h2>
-  <p class="skills__text">Déploiement, automatisation & contrôle qualité</p>
-
-  <div class="skills__data">
-    <div class="skills__names">
-      <i class='bx bx-cube skills__icon'></i>
-      <span class="skills__name">Docker • Nginx</span>
-    </div>
-  </div>
-
-  <div class="skills__data">
-    <div class="skills__names">
-      <i class='bx bx-git-branch skills__icon'></i>
-      <span class="skills__name">CI/CD • GitHub Actions</span>
-    </div>
-  </div>
-
-  <div class="skills__data">
-    <div class="skills__names">
-      <i class='bx bx-cloud skills__icon'></i>
-      <span class="skills__name">DigitalOcean • MongoDB Atlas</span>
-    </div>
-  </div>
-
-  <div class="skills__data">
-    <div class="skills__names">
-      <i class='bx bx-shield-quarter skills__icon'></i>
-      <span class="skills__name">Audit sécurité • OWASP • SonarCloud</span>
-    </div>
-  </div>
-</div>
-<div>
-    <div>
-                    <img src="assets/img/work3.jpg" alt="Image de travail" class="skills__img">
-                </div>
-</div>
-
-        </section>
-
-        <!-- ===== WORK  ===== -->
-        <!-- ===== WORK ===== -->
-<!-- ===== WORK ===== -->
-<section class="work section" id="work">
-  <h2 class="section-title">Expériences</h2>
-
-  <div class="work__container bd-grid">
-
-    <!-- ACTN -->
-    <div class="skills__data work-row">
-      <div class="work__left">
-        <h3 class="skills__name">Alternance – ACTN</h3>
-        <div class="work__tech">
-          <i class='bx bxl-angular'></i>
-          <i class='bx bxl-php'></i>
-          <i class='bx bxs-data'></i>
-          <i class='bx bx-map'></i>
-          <i class='bx bx-server'></i>
-          <i class='bx bx-git-branch'></i>
-        </div>
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="index.html" class="nav__logo">Lucas</a>
       </div>
 
-      <div class="work__right">
-        <ul>
-          <li>Développement <strong>from scratch</strong> d’un intranet commercial (Angular + PHP) : comptes, devis/commandes, reporting.</li>
-          <li><strong>Refonte e-commerce</strong> : migration Angular 15 → 19, refonte graphique, amélioration des modules.</li>
-          <li><strong>Upgrade infra</strong> : Windows Server 2012 → Nginx sous Linux (perfs & sécurité).</li>
-          <li>Carte clients <strong>interactive</strong> (Leaflet + Angular + PHP) : géolocalisation, filtres, MAJ dynamique.</li>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Accueil</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Compétences</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Expériences</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
-        <div class="work__badges">
-          <span class="badge">Angular</span><span class="badge">TypeScript</span>
-          <span class="badge">PHP</span><span class="badge">MySQL</span>
-          <span class="badge">Leaflet</span><span class="badge">Nginx/Linux</span>
-          <span class="badge">CI/CD</span>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home">
+      <div class="home__data">
+        <h1 class="home__title">Salut,<br>je suis <span class="home__title-color">Lucas</span><br>Dév.
+          web </h1>
+
+        <a href="#contact" class="nav__link">Contact</a>
+      </div>
+      <div class="home__img">
+        <img src="assets/img/IMG-0253.jpg" alt=" ma photo">
+
+      </div>
+      <div class="home__social">
+        <a href="https://www.linkedin.com/in/lucas-saint-sup%C3%A9ry-195767205/" class="home__social-icon"><i
+            class='bx bxl-linkedin'></i></a>
+
+        <a href="https://github.com/ElLuco6" class="home__social-icon"><i class='bx bxl-github'></i></a>
+      </div>
+
+
+    </section>
+
+    <!--===== ABOUT =====-->
+    <section class="about section " id="about">
+      <h2 class="section-title">À propos</h2>
+
+      <div class="about__container bd-grid">
+        <div class="about__img">
+          <img src="assets/img/work2.jpg" alt="ma photo mdr">
+        </div>
+
+        <div>
+          <h2 class="about__subtitle">Alors pour faire simple</h2>
+          <p class="about__text">Je suis développeur web full-stack, fraîchement diplômé d’un Master en développement
+            logiciel, je me lance en freelance pour transformer vos idées en applications concrètes.
+          </p>
         </div>
       </div>
+    </section>
+
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Compétences</h2>
+
+      <div class="skills__container bd-grid">
+        <div>
+          <h2 class="skills__subtitle">Front-end</h2>
+          <p class="skills__text">Moderne, maintenable et orienté performance</p>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bx-code-curly skills__icon'></i>
+              <span class="skills__name">TypeScript</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-angular skills__icon'></i>
+              <span class="skills__name">Angular • RxJS • Angular Material</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-react skills__icon'></i>
+              <span class="skills__name">React</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-css3 skills__icon'></i>
+              <span class="skills__name">SCSS • Tailwind CSS</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-wordpress skills__icon'></i>
+              <span class="skills__name">Wordpress</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div>
+          <img src="assets/img/work3.jpg" alt="Image de travail" class="skills__img">
+        </div>
+      </div>
+      <div class="skills__container bd-grid">
+        <div>
+          <h2 class="skills__subtitle">Back-end</h2>
+          <p class="skills__text">Développement de back-end fiables et évolutifs, du prototype à la mise en production.
+          </p>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-nodejs skills__icon'></i>
+              <span class="skills__name">Node.js • NestJS • Express</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxs-data skills__icon'></i>
+              <span class="skills__name">PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bx-leaf skills__icon'></i>
+              <span class="skills__name">MongoDB</span>
+            </div>
+          </div>
+
+          <!-- Optionnel : auth & API, si tu veux préciser le type de back -->
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bx-lock-alt skills__icon'></i>
+              <span class="skills__name">REST APIs • Auth JWT</span>
+            </div>
+          </div>
+
+          <!-- Expériences / héritage -->
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-php skills__icon'></i>
+              <span class="skills__name">PHP • Symfony</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxs-data skills__icon'></i>
+              <span class="skills__name">MySQL</span>
+            </div>
+          </div>
+
+        </div>
+        <div>
+          <img src="assets/img/work5.jpg" alt="image de travail" class="skills__img">
+        </div>
+      </div>
+
+      </div>
+
+
+
+
+
+
+      </div>
+
+      <div class="skills__container bd-grid">
+        <div>
+          <h2 class="skills__subtitle">Infra & Audit</h2>
+          <p class="skills__text">Déploiement, automatisation & contrôle qualité</p>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bx-cube skills__icon'></i>
+              <span class="skills__name">Docker • Nginx</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bx-git-branch skills__icon'></i>
+              <span class="skills__name">CI/CD • GitHub Actions</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bx-cloud skills__icon'></i>
+              <span class="skills__name">DigitalOcean • MongoDB Atlas</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bx-shield-quarter skills__icon'></i>
+              <span class="skills__name">Audit sécurité • OWASP • SonarCloud</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="assets/img/work3.jpg" alt="Image de travail" class="skills__img">
+          </div>
+        </div>
+
+    </section>
+
+    <!-- ===== WORK  ===== -->
+    <section class="work section" id="work">
+      <h2 class="section-title">Expériences</h2>
+
+      <div class="work__container bd-grid">
+
+        
+
+        <!-- YOGILAB -->
+<div class="skills__data work-row">
+  <div class="work__left">
+    <h3 class="skills__name">Mission freelance – YogiLab</h3>
+    <div class="work__tech">
+      <i class='bx bxl-react'></i>
+      <i class='bx bxl-nodejs'></i>
+      <i class='bx bxs-data'></i>
+      <i class='bx bx-credit-card'></i>
+      <i class='bx bx-plug'></i>
+      <i class='bx bx-shield-quarter'></i>
     </div>
+  </div>
 
-    <!-- ACTN Blog -->
-    <div class="skills__data work-row">
-      <div class="work__left">
-        <h3 class="skills__name">Refonte Blog – ACTN</h3>
-        <div class="work__tech">
-          <i class='bx bxl-wordpress'></i>
-          <i class='bx bxl-php'></i>
-          <i class='bx bx-server'></i>
-          <i class='bx bx-rocket'></i>
-        </div>
-      </div>
-
-      <div class="work__right">
-        <ul>
-          <li><strong>Refonte complète</strong> sous WordPress (design & ergonomie).</li>
-          <li><strong>Migration infra</strong> vers Nginx/Linux (perfs & sécurité).</li>
-        </ul>
-        <div class="work__badges">
-          <span class="badge">WordPress</span><span class="badge">PHP</span>
-          <span class="badge">MySQL</span><span class="badge">SEO</span>
-        </div>
-      </div>
+  <div class="work__right">
+     <ul>
+      <li><strong>Paiements sans friction</strong> : parcours de paiement simplifié et unifié pour limiter les abandons.</li>
+      <li><strong>Abonnements fiables</strong> : renouvellements et impayés gérés automatiquement, moins de tâches manuelles.</li>
+      <li><strong>Accès automatique aux cours</strong> : ouverture immédiate après paiement, arrêt quand l’abonnement s’arrête.</li>
+      <li><strong>Lecture immersive</strong> : page vidéo plein écran qui s’adapte à tout écran.</li>
+    </ul>
+    <div class="work__badges">
+      <span class="badge">React</span><span class="badge">Node.js</span>
+      <span class="badge">Express</span><span class="badge">MongoDB</span>
+      <span class="badge">Stripe</span><span class="badge">PayPal</span>
+      
+      <span class="badge">UX</span>
     </div>
+  </div>
+</div>
 
-    <!-- Mateleau -->
-    <div class="skills__data work-row">
-      <div class="work__left">
-        <h3 class="skills__name">Mateleau – CRM de plongée</h3>
-        <div class="work__tech">
-          <i class='bx bxl-angular'></i>
-          <i class='bx bx-code-block'></i>
-          <i class='bx bxs-data'></i>
-          <i class='bx bx-leaf'></i>
-          <i class='bx bx-server'></i>
-          <i class='bx bx-credit-card'></i>
-          <i class='bx bx-git-branch'></i>
+
+        <!-- ACTN -->
+        <div class="skills__data work-row">
+          <div class="work__left">
+            <h3 class="skills__name">Alternance – ACTN</h3>
+            <div class="work__tech">
+              <i class='bx bxl-angular'></i>
+              <i class='bx bxl-php'></i>
+              <i class='bx bxs-data'></i>
+              <i class='bx bx-map'></i>
+              <i class='bx bx-server'></i>
+              <i class='bx bx-git-branch'></i>
+            </div>
+          </div>
+
+          <div class="work__right">
+            <ul>
+              <li>Développement <strong>from scratch</strong> d’un intranet commercial (Angular + PHP) : comptes,
+                devis/commandes, reporting.</li>
+              <li><strong>Refonte e-commerce</strong> : migration Angular 15 → 19, refonte graphique, amélioration des
+                modules.</li>
+              <li><strong>Upgrade infra</strong> : Windows Server 2012 → Nginx sous Linux (perfs & sécurité).</li>
+              <li>Carte clients <strong>interactive</strong> (Leaflet + Angular + PHP) : géolocalisation, filtres, MAJ
+                dynamique.</li>
+            </ul>
+            <div class="work__badges">
+              <span class="badge">Angular</span><span class="badge">TypeScript</span>
+              <span class="badge">PHP</span><span class="badge">MySQL</span>
+              <span class="badge">Leaflet</span><span class="badge">Nginx/Linux</span>
+              <span class="badge">CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACTN Blog -->
+        <div class="skills__data work-row">
+          <div class="work__left">
+            <h3 class="skills__name">Refonte Blog – ACTN</h3>
+            <div class="work__tech">
+              <i class='bx bxl-wordpress'></i>
+              <i class='bx bxl-php'></i>
+              <i class='bx bx-server'></i>
+              <i class='bx bx-rocket'></i>
+            </div>
+          </div>
+
+          <div class="work__right">
+            <ul>
+              <li><strong>Refonte complète</strong> sous WordPress (design & ergonomie).</li>
+              <li><strong>Migration infra</strong> vers Nginx/Linux (perfs & sécurité).</li>
+            </ul>
+            <div class="work__badges">
+              <span class="badge">WordPress</span><span class="badge">PHP</span>
+              <span class="badge">MySQL</span><span class="badge">SEO</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mateleau -->
+        <div class="skills__data work-row">
+          <div class="work__left">
+            <h3 class="skills__name">Mateleau – CRM de plongée</h3>
+            <div class="work__tech">
+              <i class='bx bxl-angular'></i>
+              <i class='bx bx-code-block'></i>
+              <i class='bx bxs-data'></i>
+              <i class='bx bx-leaf'></i>
+              <i class='bx bx-server'></i>
+              <i class='bx bx-credit-card'></i>
+              <i class='bx bx-git-branch'></i>
+            </div>
+          </div>
+
+          <div class="work__right">
+            <ul>
+              <li>CRM SaaS : plannings, réservations, moniteurs, matériel.</li>
+              <li>Vues <strong>Calendrier</strong> & <strong>Kanban</strong> en temps réel.</li>
+              <li>Intégration <strong>Stripe</strong> (paiements).</li>
+              <li>Déploiement <strong>Docker</strong> & <strong>GitHub Actions</strong> (VPS, CI/CD).</li>
+            </ul>
+            <div class="work__badges">
+              <span class="badge">Angular</span><span class="badge">NestJS</span>
+              <span class="badge">PostgreSQL</span><span class="badge">MongoDB</span>
+              <span class="badge">Nginx</span><span class="badge">Stripe</span>
+              <span class="badge">CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sealocker -->
+        <div class="skills__data work-row">
+          <div class="work__left">
+            <h3 class="skills__name">Alternance – Sealocker</h3>
+            <div class="work__tech">
+              <i class='bx bx-globe'></i>
+              <i class='bx bxl-angular'></i>
+              <i class='bx bx-line-chart'></i>
+              <i class='bx bx-rocket'></i>
+            </div>
+          </div>
+
+          <div class="work__right">
+            <ul>
+              <li>E-commerce <strong>Webflow</strong> (catalogues, automatisations, CMS dynamique).</li>
+              <li>Module Angular connecté à une API interne (données partenaires dynamiques).</li>
+              <li>Intégration <strong>responsive</strong> & SEO-friendly.</li>
+              <li><strong>Analytics</strong> & suivi du trafic.</li>
+            </ul>
+            <div class="work__badges">
+              <span class="badge">Webflow</span><span class="badge">Angular</span>
+              <span class="badge">TypeScript</span><span class="badge">SEO</span>
+              <span class="badge">Analytics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Symfony -->
+        <div class="skills__data work-row">
+          <div class="work__left">
+            <h3 class="skills__name">E-commerce – Symfony</h3>
+            <div class="work__tech">
+              <i class='bx bxl-php'></i>
+              <i class='bx bxs-data'></i>
+              <i class='bx bx-credit-card'></i>
+            </div>
+          </div>
+
+          <div class="work__right">
+            <ul>
+              <li>Site e-commerce (panier, commande, comptes) avec <strong>Stripe</strong> (paiement sécurisé).</li>
+            </ul>
+            <div class="work__badges">
+              <span class="badge">Symfony</span><span class="badge">PHP</span>
+              <span class="badge">MySQL</span><span class="badge">Stripe API</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!--===== CONTACT =====-->
+<!--===== CONTACT =====-->
+<!--===== CONTACT =====-->
+<section class="contact section" id="contact">
+  <h2 class="section-title">Contact</h2>
+
+  <div class="contact__block">
+    <!-- Formulaire -->
+    <form name="contact" method="POST" action="/thanks.html"
+          data-netlify="true" netlify-honeypot="bot-field"
+          class="contact__form" autocomplete="on">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="hidden" aria-hidden="true">
+        <label>Ne pas remplir : <input name="bot-field"></label>
+      </p>
+
+      <div class="form__row">
+        <div class="form__group">
+          <label for="name">Nom</label>
+          <input id="name" name="name" type="text" class="contact__input" placeholder="Votre nom" required>
+        </div>
+        <div class="form__group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" class="contact__input" placeholder="vous@exemple.com" required>
         </div>
       </div>
 
-      <div class="work__right">
-        <ul>
-          <li>CRM SaaS : plannings, réservations, moniteurs, matériel.</li>
-          <li>Vues <strong>Calendrier</strong> & <strong>Kanban</strong> en temps réel.</li>
-          <li>Intégration <strong>Stripe</strong> (paiements).</li>
-          <li>Déploiement <strong>Docker</strong> & <strong>GitHub Actions</strong> (VPS, CI/CD).</li>
-        </ul>
-        <div class="work__badges">
-          <span class="badge">Angular</span><span class="badge">NestJS</span>
-          <span class="badge">PostgreSQL</span><span class="badge">MongoDB</span>
-          <span class="badge">Nginx</span><span class="badge">Stripe</span>
-          <span class="badge">CI/CD</span>
-        </div>
+      <div class="form__group">
+        <label for="subject">Sujet</label>
+        <input id="subject" name="subject" type="text" class="contact__input" placeholder="Ex. Paiements / refonte">
       </div>
+
+      <div class="form__group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" class="contact__input contact__textarea" placeholder="Dites-m’en plus…" required></textarea>
+      </div>
+
+      <div class="form__footer">
+        <p class="form__note">En envoyant, vous acceptez d’être recontacté par email.</p>
+        <button type="submit" class="button contact__button">Envoyer</button>
+      </div>
+    </form>
+
+    <!-- Infos en bas -->
+    <div class="contact__infos">
+      <h3 class="skills__name"><i class='bx bxl-gmail'></i>
+        <a href="mailto:saintsuperylucas@gmail.com">saintsuperylucas@gmail.com</a>
+      </h3>
+      <h3 class="skills__name"><i class='bx bxl-discord-alt'></i> El-luco#7769</h3>
+      <h3 class="skills__name"><i class='bx bxs-phone'></i> 06.74.41.52.56</h3>
     </div>
-
-    <!-- Sealocker -->
-    <div class="skills__data work-row">
-      <div class="work__left">
-        <h3 class="skills__name">Alternance – Sealocker</h3>
-        <div class="work__tech">
-          <i class='bx bx-globe'></i>
-          <i class='bx bxl-angular'></i>
-          <i class='bx bx-line-chart'></i>
-          <i class='bx bx-rocket'></i>
-        </div>
-      </div>
-
-      <div class="work__right">
-        <ul>
-          <li>E-commerce <strong>Webflow</strong> (catalogues, automatisations, CMS dynamique).</li>
-          <li>Module Angular connecté à une API interne (données partenaires dynamiques).</li>
-          <li>Intégration <strong>responsive</strong> & SEO-friendly.</li>
-          <li><strong>Analytics</strong> & suivi du trafic.</li>
-        </ul>
-        <div class="work__badges">
-          <span class="badge">Webflow</span><span class="badge">Angular</span>
-          <span class="badge">TypeScript</span><span class="badge">SEO</span>
-          <span class="badge">Analytics</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Symfony -->
-    <div class="skills__data work-row">
-      <div class="work__left">
-        <h3 class="skills__name">E-commerce – Symfony</h3>
-        <div class="work__tech">
-          <i class='bx bxl-php'></i>
-          <i class='bx bxs-data'></i>
-          <i class='bx bx-credit-card'></i>
-        </div>
-      </div>
-
-      <div class="work__right">
-        <ul>
-          <li>Site e-commerce (panier, commande, comptes) avec <strong>Stripe</strong> (paiement sécurisé).</li>
-        </ul>
-        <div class="work__badges">
-          <span class="badge">Symfony</span><span class="badge">PHP</span>
-          <span class="badge">MySQL</span><span class="badge">Stripe API</span>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
 
 
-        <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
-            
-            
-           
-            <div class="contact__container bd-grid">
-                <h3 class="skills__name"><i class='bx bxl-gmail'></i> <a href="mailto:saintsuperylucas@gmail.com">saintsuperylucas@gmail.com</a></h3>
-                <h3 class="skills__name"><i class='bx bxl-discord-alt'></i> El-luco#7769</h3>
-                <h3 class="skills__name"> <i class='bx bxs-phone'></i>06.74.41.52.56</h3>
-               
-            </div>
-        </section>
-    </main>
+  </main>
 
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-        <p class="footer__title">Saint-Supéry Lucas</p>
+  <!--===== FOOTER =====-->
+  <footer class="footer">
+    <p class="footer__title">Saint-Supéry Lucas</p>
 
-        <p>&#169; <script>document.write(new Date().getFullYear())</script> copyright all right reserved</p>
-    </footer>
+    <p>&#169; <script>
+        document.write(new Date().getFullYear())
+      </script> copyright all right reserved</p>
+  </footer>
 
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <!--===== SCROLL REVEAL =====-->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
+  <!--===== MAIN JS =====-->
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

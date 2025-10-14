@@ -713,3 +713,108 @@ img{
 .home{
   margin-top: 60px !important;
 }
+
+/* ===== CONTACT – bloc full-width, form en haut, infos en bas ===== */
+#contact.section { padding-top: 0; padding-bottom: 0; } /* pas de padding section */
+#contact .bd-grid { width: 100%; margin: 0; padding: 0; display: block; } /* full width */
+
+#contact .contact__block{
+  width: 100%;
+  background: #fff;
+ 
+  /* aucun padding externe pour garder le vrai full-width */
+}
+
+/* Formulaire (plein large) */
+#contact .contact__form{
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  /* pour respirer un minimum sans “padding section” */
+  padding: 1rem var(--mb-2);
+}
+#contact .form__row{ display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+#contact .form__group{ display: grid; gap: .35rem; }
+#contact .form__group label{ font-size: .9rem; font-weight: 600; color: var(--second-color); }
+
+#contact .contact__input{
+  width: 100%;
+  padding: .9rem 1rem;
+  border: 1px solid rgba(14,36,49,.18);
+  border-radius: .6rem;
+  background: #fff;
+  color: var(--second-color);
+  font-size: var(--normal-font-size);
+  transition: box-shadow .15s ease, border-color .15s ease, transform .04s ease;
+  margin-bottom: 0; /* on gère l'espacement avec gap */
+}
+#contact .contact__input::placeholder{ color: rgba(14,36,49,.55); }
+#contact .contact__input:focus{
+  outline: none;
+  border-color: var(--first-color);
+  box-shadow: 0 0 0 3px rgba(64,112,244,.15);
+}
+#contact .contact__textarea{ min-height: 140px; resize: vertical; }
+
+#contact .form__footer{
+  display: flex; align-items: center; justify-content: space-between; gap: .75rem;
+}
+#contact .form__note{ font-size: .8rem; opacity: .75; }
+#contact .contact__button{ margin-left: 0; border-radius: .6rem; }
+
+/* Infos en bas (plein large, sans padding externe) */
+#contact .contact__infos{
+  width: 100%;
+  border-top: 1px solid rgba(14,36,49,.08);
+  display: grid; gap: .25rem;
+  padding: .75rem var(--mb-2); /* léger padding interne pour lisibilité */
+}
+#contact .contact__infos .skills__name{
+  display: flex; align-items: center; gap: .5rem;
+  margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 767px){
+  #contact .form__row{ grid-template-columns: 1fr; }
+  #contact .form__footer{ flex-direction: column; align-items: flex-start; }
+}
+
+/* 1) Cacher le honeypot (et rester accessible) */
+#contact .hidden,
+#contact .contact__form [name="bot-field"]{
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* 2) Form aligné sur la largeur des autres sections */
+#contact .contact__form{
+  max-width: 1024px;           /* même largeur que .bd-grid */
+  margin: 0 auto;              /* centré */
+  padding: 0 var(--mb-2) 1rem; /* même marge latérale que .bd-grid */
+}
+
+/* (tes règles existantes pour .form__row, .form__group, .contact__input, etc. restent valides) */
+
+/* 3) Bloc infos (mail/tel) centré et aligné comme le form */
+#contact .contact__infos{
+  max-width: 1024px;
+  margin: 0 auto 1rem;
+  padding: 0 var(--mb-2) 1rem;
+  text-align: center;
+  border-top: 1px solid rgba(14,36,49,.08); /* séparation légère form/infos */
+}
+#contact .contact__infos .skills__name{
+  display: flex;
+  justify-content: center;   /* centrage horizontal */
+  align-items: center;
+  gap: .5rem;
+  margin: .25rem 0;
+}
+#contact .contact__infos a{ color: var(--first-color); font-weight: 600; }
+
